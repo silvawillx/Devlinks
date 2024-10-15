@@ -42,22 +42,38 @@ body * {
 }
 
 /* profile */
+.profile-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 16px;
+}
+
 #profile {
-  text-align: center;
-  padding: 24px;
-  
+  width: 130px;
+  height: 130px;
+  background: linear-gradient(135deg, #9572FC, #43E7AD, #E2D45C);
+  border-radius: 50%;
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #profile img {
-  width: 112px;
+  width: 120px;
+  height: 120px;
   border-radius: 50%;
+  object-fit: cover; /* Garante que a imagem se ajuste perfeitamente no círculo */
 }
 
-#profile p {
+#profile-name {
   font-weight: 500;
-  line-height: 24px;
-  margin-top: 8px;
+  margin-top: 10px;
+  text-align: center;
 }
+
+
 
 /* switch */
 #switch {
